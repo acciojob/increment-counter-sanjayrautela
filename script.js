@@ -8,7 +8,7 @@ let counterValue = 0;
 // Function to increment the counter value
 function incrementCounter() {
   // Display the current counter value before incrementing
-  alert(`Counter value before increment: ${counterValue}`);
+  alert(` ${counterValue}`);
   
   // Increment the counter value
   counterValue++;
