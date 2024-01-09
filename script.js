@@ -1,14 +1,21 @@
-//your JS code here. If required.
+// Get the counter element and the increment button
 const counterElement = document.getElementById('counter');
-const incrementButton = document.getElementByID('incrementBtn');
+const incrementButton = document.getElementById('incrementBtn');
 
+// Counter's initial value
 let counterValue = 0;
 
-function incrementCounter(){
-	alert(`counter value before increment: ${counterValue}`);
-
-	countValue++;
-	counterElement.textContent = countValue;
+// Function to increment the counter value
+function incrementCounter() {
+  // Display the current counter value before incrementing
+  alert(`Counter value before increment: ${counterValue}`);
+  
+  // Increment the counter value
+  counterValue++;
+  
+  // Update the counter text in the paragraph
+  counterElement.textContent = counterValue;
 }
 
-incrementButton.addEventListener('click' , incrementCounter);
+// Add a click event listener to the increment button
+incrementButton.addEventListener('click', incrementCounter);
