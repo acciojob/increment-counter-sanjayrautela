@@ -19,3 +19,8 @@ function incrementCounter() {
 
 // Add a click event listener to the increment button
 incrementButton.addEventListener('click', incrementCounter);
+
+cy.on('window:alert', alertText => {
+  expect(alertText).to.contain('Counter value before increment:');
+});
+
